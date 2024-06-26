@@ -1,0 +1,23 @@
+{
+  "name": "cy-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "headTest": "npx curess run --headed",
+    "chromeTest": "npx run test --browser chrome",
+    "recordDashBoardTest": "npx cypress run --record --key c1e59d63-e3d9-416f-bb0a-c07f66040c67 ",
+    "testAlertPopUp": "npx cypress run --spec cypress/integration/alertPopUps.cy.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.12.0",
+    "cypress-iframe": "^1.0.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "mysql": "^2.18.1"
+  }
+}
