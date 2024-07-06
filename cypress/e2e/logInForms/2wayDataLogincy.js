@@ -1,5 +1,5 @@
 
-import HomePage from "./pageObjectModel.cy"
+import HomePage from "../../support/pageObjectModel.cy"
 describe('Test Suite for LogIn form using  JSON & COMMANDS', function () {
 
     before(() => {

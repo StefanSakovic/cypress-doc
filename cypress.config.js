@@ -40,9 +40,7 @@ module.exports = defineConfig({
       })
     },
     // specPattern: 'cypress/logInForms/*.js',
-    specPattern: ['cypress/integration/*.js',
-      'cypress/requests/*.js'
-    ]
+    specPattern: 'cypress/e2e'
   },
   hideXHRInCommandLog: true,
   chromeWebSecurity: false,
