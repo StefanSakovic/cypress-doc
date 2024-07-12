@@ -28,4 +28,9 @@
         cy.log('Example test 2')
 
     })
+    it("Example test2" ,() => {
+
+        cy.log('Example test 2')
+
+    })
   })
