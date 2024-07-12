@@ -24,12 +24,13 @@ module.exports = defineConfig({
   },
   env: {
     url: "https://rahulshettyacademy.com/",
-    db: {                                                 //DATABASE
+    db: {                                                 
       server: '127.0.0.1',
       user: 'root',
       password: "Y1012Jqkhkp",
       database: "myfirstdatabase"
-    }
+    },
+    "first_name" : "Filipe"
   },
   e2e: {
     setupNodeEvents(on, config) {
