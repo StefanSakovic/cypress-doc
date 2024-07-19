@@ -5,6 +5,7 @@ describe("Handling mouse-actions", () => {
     })
     it("Sroll element into view ", () => {
         cy.get('#actions').scrollIntoView().invoke('removeAttr', 'target').click({ force: true });
+        cy.scrollTo('center')//scrole whole page in center
     });
 
     it("should be able to drag and drop a draggable item", () => {
@@ -14,7 +15,7 @@ describe("Handling mouse-actions", () => {
         //'mousedown' means that we hold/press (without letting go)..It means that we do not take our finger off the click.
 
         cy.get('#droppable').trigger('mousemove').trigger('mouseup', { force: true });
-        //then we get the big window and moved the cursor from the small one to the big one with the 'mousemove', 
+        //then we get the small window and moved the cursor from the small one to the big one with the 'mousemove', 
         //then we are done with 'mouseup' which is for removing the finger from the mouse.
     });
 
